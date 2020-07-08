@@ -7,3 +7,13 @@
 #greeting-container {
   margin-top: 20px;
 }
+.container{
+    background-image:"../images/background.jpeg";
+}
+.container{
+    flex: column;
+    background-color: lightpink;
+}
+.links{
+    margin: 10px;
+}
