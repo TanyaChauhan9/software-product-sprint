@@ -11,6 +11,10 @@ body{
 #greeting-container {
   margin-top: 20px;
 }
+.content{
+    margin-left:0px;
+    margin-right:0px;
+}
 .container{
     background-color:rgb(255, 255, 255);
     margin-bottom: 40px;
@@ -42,22 +46,34 @@ body{
     background-color: rgb(255, 255, 255);
     padding:20px;
     margin-bottom: 20px;
-    margin-left: 25px;
-    width:65%;
+    width:100%;
 }
-.projects{
+.rightSide{
+    margin-right: 25px;
+    margin-left: 10px;
+    width:35%;
+    float:right;
+    background-color:rgb(218, 227, 230);
+}
+.leftSide{
     margin-left: 25px;
-    background-color:rgb(255, 255, 255);
-    padding:20px;
-    width:65%;
+    width:60%;
     margin-right: 10px;
     float:left;
-    margin-bottom:20px;
+    background-color:rgb(218, 227, 230);
 }
-.photography{
-    border-radius: 25px;
+.projects{
+    padding:20px;
+    width:100%;
+    margin-bottom:20px;
     background-color:rgb(255, 255, 255);
-    padding:10px;
-    width:600px;
-    float:left;
+}
+.hobbies{
+    padding:20px;
+    width:100%;
+    margin-bottom: 20px;
+    background-color:rgb(255, 255, 255);
+}
+h2,h1{
+    color: rgb(137, 203, 160);
 }
