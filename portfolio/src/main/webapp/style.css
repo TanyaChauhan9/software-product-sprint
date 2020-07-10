@@ -4,42 +4,59 @@
   width: 650px;
 }
 body{
-    background-color: black;
+    background-color:rgb(218, 227, 230);
     padding:10px;
+    color: rgb(111, 117, 124);
 }
 #greeting-container {
   margin-top: 20px;
 }
 .container{
-    border-radius: 25px;
-    background-color: lightblue;
-    margin-bottom: 5px;
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 40px;
+    width:100%;
+}
+.projectLogo{
+    border-radius: 50%;
+    height:140px;
+    width:150px;
+    float:left;
+    margin-right: 20px;
+}
+.profilePhoto{
+    margin-top:15px;
+    border-radius: 50%;
+    float:left;
+    margin-right:15px;
+    margin-bottom: 15px;
 }
 .links{
     margin: 10px;
 }
-.sections{
-    border-radius: 25px;
-    background-color: white;
-
+.name{
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-weight:bold;
 }
 .Aboutme{
-    border-radius: 25px;
-    background-color: paleturquoise;
-    padding:10px;
-    margin-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    padding:20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    width:65%;
 }
 .projects{
-    border-radius: 25px;
-    background-color: plum;
-    padding:10px;
-    width:600px;
+    margin-left: 25px;
+    background-color:rgb(255, 255, 255);
+    padding:20px;
+    width:65%;
     margin-right: 10px;
     float:left;
+    margin-bottom:20px;
 }
 .photography{
     border-radius: 25px;
-    background-color: plum;
+    background-color:rgb(255, 255, 255);
     padding:10px;
     width:600px;
     float:left;

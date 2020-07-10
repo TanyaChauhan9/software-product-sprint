@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <meta charset="UTF-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   <body>
         <div class="container">                       
-            <img src="../images/profilePhoto.jpg" alt="profile image" width=100 height=100 />
+            <img class="profilePhoto" src="../images/profilePhoto.jpg" alt="profile image" width=130 height=130 />
             <div>
                 <h1 class="name">Tanya Chauhan</h1>
                 <div>
@@ -24,9 +25,8 @@
                 </div>
             </div><!--//profile-->              
         </div><!--//container-->
-        <div class="sections">
-            <div class="Aboutme">
-                <h3>About me</h3>
+        <div class="Aboutme">
+                <h2>About me</h2>
                 <p>Hi! I'm Tanya. 
                 I'm pursuing my Bachelor's in Mathematics and Computing from Indian Institure of Techology, Guwahati. 
                 Things that interest me the most are music, working out, novels, astrophysics and a starry night sky! 
@@ -34,49 +34,79 @@
                 Recently, I've developed an interest for coding and it's the deep thinking part of it which excites me the most. 
                 Feel free to reach out to me anywhere and I'd love to talk to you :)
                 </p>
+        </div>
+        <div class="projects">
+            <h2>
+                Work experience
+            </h2>
+            <br />
+            <br />
+            <img class="projectLogo" src="../images/uberlogo.jpg">
+            <div class="projectDesc">
+                <h3>Uber Assistant Chrome Extension (Ongoing)</h3>
+                <p>Developed a Node based chrome extension from scratch for assisting Uber employees in their daily work life.
+                    Implemented email addresses based web scraping and RPC Handler to fetch and render employee data on extension.
+                    Worked on fetching the count of documentations contributed by each employee using Lucidworks Fusion framework built on top of Apache Solr.
+                    Implemented document tagging and modified Lucidworks Fusion index and query pipeline for uSearch.
+                </p>
             </div>
-            <div class="content">
-                <div class="projects">
-                    <h2>
-                        My Projects
-                    </h2>
-                    <ul>
-                        <li>
-                            <h3>Socket Programming: Base-64 Encoding System</h3>
-                            <p>Developed a Base64 Encoding Communication Protocol between server and client to communicate with each other based on TCP Sockets. 
-                                Implemented a concurrent server to accept connections from multiple clients and serve all of them concurrently. 
-                                The client and server interact using three types of messages: Type 1(Encoded text message), Type 2(ACK message), Type 3(Connection Termination message)
-                            </p>
-                        </li>
-                    <li>
-                        <h3>Accelerated Residual Descent Method</h3>
-                        <p>Built a neural network optimization algorithm by modifying Nesterov's library.
-                            Implemented Accelerated Residual Method which improves upon time complexity and
-                            convergence rate of Conjugate Gradient Method and Nesterov's algorithm for dense matrices.
-                            Introduction of residual descent restarting technique and incorporating preconditioning
-                            techniques to accelerate its convergence.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Microsoft Teams</h3>
-                        <p>Developed a Modern Employee Intranet app on Microsoft Teams, to host all features and needs
-                            for any organisation on a single platform. Implemented command-based intelligent bots to identify, understand and proactively reply using rich cards, message extension to query through content, and task modules to create a modal popup experience.
-                            The app was created on C# and .NET, used cognitive services like LUIS to develop an NLP based bot.
-                        </p>
-                    </li>
-                    </ul>
+            <br />
+            <br />
+            <img class="projectLogo" src="../images/msLogo.jpg">
+            <div class="projectDesc">
+                <h3>Modern Employee Intranet App</h3>
+                <p>Developed a Modern Employee Intranet app on Microsoft Teams, to host all features and needs
+                    for any organisation on a single platform. Implemented command-based intelligent bots to identify, understand and proactively reply using rich cards, message extension to query through content, and task modules to create a modal popup experience.
+                    The app was created on C# and .NET, used cognitive services like LUIS to develop an NLP based bot.
+                </p>
+            </div>
+        </div>
+        <div class="projects">
+            <h2>
+                My Projects
+            </h2>
+                <br />
+                <br />
+                <img class="projectLogo" src="../images/ML.jpg">
+                <div class="projectDesc">
+                    <h3>Accelerated Residual Descent Method</h3>
+                    <p>Built a neural network optimization algorithm by modifying Nesterov's library.
+                    Implemented Accelerated Residual Method which improves upon time complexity and
+                    convergence rate of Conjugate Gradient Method and Nesterov's algorithm for dense matrices.
+                    Introduction of residual descent restarting technique and incorporating preconditioning
+                    techniques to accelerate its convergence. 
+                    </p>
                 </div>
-                <div class="photography">
-                    <h2>My photography skills!!</h2>
-                    <p>I'm not a very photogenic person and on top of that I am camera conscious :(
-                        So, the only selfies I ever take of myself are those weird, scary ones. 
-                        Besides taking my selfies, I love capturing the nature. 
-                        And this love has only grown ever since I joined my college with one of the most beautiful campuses in the country!!
-                        I absolutely adore capturing the lovely, colourful flowers in the spring and lakes and ducks and swans and ofcourse the sky :)
-                        So, my photo gallery would be full of sunsets, rain, swans and flowers. And ofcourse, I'll throw in some of my weird selfies too!
+                <br /> 
+                <br />
+                <img class="projectLogo" src="../images/faculty.png">
+                <div class="projectDesc">
+                    <h3>Webgen - Faculty Webpage Generator</h3>
+                    <p>An automation web portal for professors to generate their own web pages under their
+                        respective departments.Added capabilities like user authentication, enabling user to choose custom web templates, file uploading system and web scraping to fetch data from pre-existing website.
+                        Technologies used: Django, JavaScript, Bootstrap 
+                    </p>
+                </div>
+                <br /> 
+                <br />
+                <img class="projectLogo" src="../images/pintos.jpg">
+                <div class="projectDesc">
+                    <h3>PintOS</h3>
+                    <p>Pintos is a simple operating system framework developed at the Stanford University.
+                        Threads, Programs Scheduler, System calls, Virtual Memory Management unit and File System were designed and implemented on top of this basic Pintos framework. The programming was done in C and was followed by rigorous testing.
+                    </p>
+                </div>
+                <br /> 
+                <br />
+                <img class="projectLogo" src="../images/nlp.jpeg">
+                <div class="projectDesc">
+                    <h3>Movie Review Text Generator</h3>
+                    <p>A deep learning model which uses sentiment analysis to auto complete reviews for a movie
+                        based on it's ratings and synopsis. Language model was operated at character level.
+                        Scraped over 1 million reviews from IMDB using Beautiful Soup and Selenium.
+                        Technologies Used : Text generation model with LSTM RNN in Python with Keras
                     </p>
                 </div>
             </div>
-        </div>
-  </body>
+    </body>
 </html>
