@@ -26,37 +26,27 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
-function getRandomQuote() {
-  console.log('Fetching a random quote.');
+function getcomment() {
+  fetch('/data').then(response => response.json()).then((comment) => {
+    // stats is an object, not a string, so we have to
+    // reference its fields to create HTML content
 
-  // The fetch() function returns a Promise because the request is asynchronous.
-  const responsePromise = fetch('/data');
-
-  // When the request is complete, pass the response into handleResponse().
-  responsePromise.then(handleResponse);
+    const commentListElement = document.getElementById('comments-container');
+    commentListElement.innerHTML = '';
+    commentListElement.appendChild(
+        createListElement('1: ' + comment[0]));
+    commentListElement.appendChild(
+        createListElement('2: ' + comment[1]));
+    commentListElement.appendChild(
+        createListElement('3: ' + comment[2]));
+  });
 }
 
-/**
- * Handles response by converting it to text and passing the result to
- * addQuoteToDom().
- */
-function handleResponse(response) {
-  console.log('Handling the response.');
-
-  // response.text() returns a Promise, because the response is a stream of
-  // content and not a simple variable.
-  const textPromise = response.text();
-
-  // When the response is converted to text, pass the result into the
-  // addQuoteToDom() function.
-  textPromise.then(addQuoteToDom);
+/** Creates an <li> element containing text. */
+function createListElement(text) {
+  const liElement = document.createElement('li');
+  liElement.innerText = text;
+  return liElement;
 }
 
-/** Adds a random quote to the DOM. */
-function addQuoteToDom(quote) {
-  console.log('Adding quote to dom: ' + quote);
-
-  const quoteContainer = document.getElementById('quote-container');
-  quoteContainer.innerText = quote;
-}
 
