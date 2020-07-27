@@ -1,18 +1,243 @@
 <!DOCTYPE html>
 <html>
-  <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-  </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+        <div class="container">                       
+            <img class="profilePhoto" src="../images/profilePhoto.jpg" alt="profile image" width=130 height=130 />
+            <div>
+                <h1 class="name">Tanya Chauhan</h1>
+                <div>
+                    <a href="https://www.facebook.com/tanya.chauhan.09">
+                        <img class="links" src="../images/facebookIcon.svg" width=30 height=30>
+                    </a>
+                    <a href="https://github.com/TanyaChauhan9">
+                        <img class="links" src="../images/githubIcon.svg" width=30 height=30>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tanya3/">
+                        <img class="links" src="../images/linkedin.svg" width=30 height=30>
+                    </a>
+                    <a href="https://twitter.com/tanyachauhan99">
+                        <img class="links" src="../images/twitterIcon.png" width=30 height=30>
+                    </a>
+                </div>
+            </div><!--//profile-->              
+        </div><!--//container-->
+        <div class="content">
+            <div class="leftSide">
+                <div class="Aboutme">
+                    <h2>About me</h2>
+                    <p>Hi! I'm Tanya. 
+                    I'm pursuing my Bachelor's in Mathematics and Computing from Indian Institure of Techology, Guwahati. 
+                    Things that interest me the most are music, coding, working out, novels, astrophysics and a starry night sky! 
+                    Also, I love having conversation with all kinds of people and gain experience from them.
+                    <br/>
+                    Recently, I've developed an interest for coding and both the thrill of speed and the patience required for diving deep into problems excite me!
+                    I've also worked on various software projects both during my college and my internships and I've worked hard to learn to write good quality codes.
+                    Feel free to reach out to me anywhere and I'd love to talk to you :)
+                    </p>
+                </div>
+                <div class="projects">
+                    <h2>
+                        Work experience
+                    </h2>
+                    <br />
+                    <br />
+                    <img class="projectLogo" src="../images/uberlogo.jpg">
+                    <div class="projectDesc">
+                        <h3>Uber Assistant Chrome Extension (Ongoing)</h3>
+                        <p>Developed a Node based chrome extension from scratch for assisting Uber employees in their daily work life.
+                            Implemented email addresses based web scraping and RPC Handler to fetch and render employee data on extension.
+                            Worked on fetching the count of documentations contributed by each employee using Lucidworks Fusion framework built on top of Apache Solr.
+                            Implemented document tagging and modified Lucidworks Fusion index and query pipeline for uSearch.
+                        </p>
+                    </div>
+                    <br />
+                    <br />
+                    <img class="projectLogo" src="../images/msLogo.jpg">
+                    <div class="projectDesc">
+                        <h3>Modern Employee Intranet App</h3>
+                        <p>Developed a Modern Employee Intranet app on Microsoft Teams, to host all features and needs
+                            for any organisation on a single platform. Implemented command-based intelligent bots to identify, understand and proactively reply using rich cards, message extension to query through content, and task modules to create a modal popup experience.
+                            The app was created on C# and .NET, used cognitive services like LUIS to develop an NLP based bot.
+                        </p>
+                    </div>
+                </div>
+                <div class="projects">
+                    <h2>
+                        My Projects
+                    </h2>
+                        <br />
+                        <br />
+                        <img class="projectLogo" src="../images/ML.jpg">
+                        <div class="projectDesc">
+                            <h3>Accelerated Residual Descent Method</h3>
+                            <p>Built a neural network optimization algorithm by modifying Nesterov's library.
+                            Implemented Accelerated Residual Method which improves upon time complexity and
+                            convergence rate of Conjugate Gradient Method and Nesterov's algorithm for dense matrices.
+                            Introduction of residual descent restarting technique and incorporating preconditioning
+                            techniques to accelerate its convergence. 
+                            </p>
+                        </div>
+                        <br /> 
+                        <br />
+                        <img class="projectLogo" src="../images/faculty.png">
+                        <div class="projectDesc">
+                            <h3>Webgen - Faculty Webpage Generator</h3>
+                            <p>An automation web portal for professors to generate their own web pages under their
+                                respective departments.Added capabilities like user authentication, enabling user to choose custom web templates, file uploading system and web scraping to fetch data from pre-existing website.
+                                Technologies used: Django, JavaScript, Bootstrap 
+                            </p>
+                        </div>
+                        <br /> 
+                        <br />
+                        <img class="projectLogo" src="../images/pintos.jpg">
+                        <div class="projectDesc">
+                            <h3>PintOS</h3>
+                            <p>Pintos is a simple operating system framework developed at the Stanford University.
+                                Threads, Programs Scheduler, System calls, Virtual Memory Management unit and File System were designed and implemented on top of this basic Pintos framework. The programming was done in C and was followed by rigorous testing.
+                            </p>
+                        </div>
+                        <br /> 
+                        <br />
+                        <img class="projectLogo" src="../images/nlp.jpeg">
+                        <div class="projectDesc">
+                            <h3>Movie Review Text Generator</h3>
+                            <p>A deep learning model which uses sentiment analysis to auto complete reviews for a movie
+                                based on it's ratings and synopsis. Language model was operated at character level.
+                                Scraped over 1 million reviews from IMDB using Beautiful Soup and Selenium.
+                                Technologies Used : Text generation model with LSTM RNN in Python with Keras
+                            </p>
+                        </div>
+                    </div>
+                    <div class="projects">
+                    <h2>
+                        Other projects
+                    </h2>
+                    <br />
+                    <div class="projectDesc">
+                        <h3>Scientific Computing - Implementation of Numerical Algorithms</h3>
+                        <p>Algorithms were developed and implemented for Iterative Methods for Non-linear equations, Polynomial Interpolation (including Cubic Interpolation), IVPs for ODEs, Finite Difference Schemes for PDEs and IVPs, Gauss-Seidel and SOR methods and Stability analysis.
+                            Programming was done in MATLAB
+                        </p>
+                    </div>
+                    <div class="projectDesc">
+                        <h3>IITG - Quikr</h3>
+                        <p>Project description-Used Django to develop an e-commerce website for Online Product Sale in IIT Guwahati.
+                            Provides the user with a catalog of different products available.A shopping cart is provided.
+                            Seller gets notified on his product being sold out.
+                        </p>
+                    </div>
+                    <div class="projectDesc">
+                        <h3>Socket Programming: Base-64 Encoding System</h3>
+                        <p>Developed a Base64 Encoding Communication Protocol between server and client to communicate with each other based on TCP Sockets. Implemented a concurrent server to accept connections from multiple clients and serve all of them concurrently. The client and server interact using three types of messages: Type 1(Encoded text message), Type 2(ACK message), Type 3(Connection Termination message).                
+                        </p>
+                    </div>
+                    <div class="projectDesc">
+                        <h3>Resq++</h3>
+                        <p>Project descriptionDeveloped a flask-based web application to manage natural disasters and spread awareness
+                            about their prevention.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightSide">
+                <div class="hobbies">
+                    <h2>
+                        Education
+                    </h2>
+                    <h3>
+                        B.Tech - Mathematics and Computing
+                    </h3>
+                    <p>
+                        IIT Guwahati (2017 - 2021)
+                    </p>
+                    <h3>
+                        Senior Secondary
+                    </h3>
+                    <p>
+                        N.K.Bagrodia Public School
+                    </p>
+                </div>
+                <div class="hobbies">
+                    <h2>
+                        Achievements
+                    </h2>
+                    <h3>Google CodeJam to I/O for women 2020</h3>
+                    <p>Ranked 27th worldwide in Google CodeJam to I/O for women 2020. Invited to attend the Google I/O conference in Mountain View, California and received a travel grant of 1050 USD for the same.
+                    </p>
+                    <h3>Smart India Hackathon 2020</h3>
+                    <p>
+                        Selected among the top 5 teams across the country to design and develop a software-based solution to tackle the management of natural disasters efficiently.
+                    </p>
+                    <h3>Samsung Parichay, 2019</h3>
+                    <p>
+                        Ranked among top 2 in 2021 batch, IIT Guwahati in coding competition held by Samsung.
+                    </p>
+                    <h3>ACM - ICPC, 2018</h3>
+                    <p>
+                        Secured All India Rank of 475 in the online qualifying round.
+                    </p>
+                    <h3>Uber She++</h3>
+                    <p>
+                        Was invited by Uber in their Bengaluru office to have a glimpse on the products they are working upon.
+                        Was one of the 40 girls to be invited from across the top colleges in India.
+                    </p>
+                    <h3>JEE Mains, 2017</h3>
+                    <p>
+                        Secured All India Rank 315 among 1.5 million candidates appearing for the test.
+                    </p>
+                    <h3>JEE Advanced, 2017</h3>
+                    <p>
+                        Secured All India Rank 945 among 0.15 million candidates appearing for the test.
+                    </p>
+                    <h3>KVPY</h3>
+                    <p>
+                        Obtained the National research
+                        fellowship by securing All India Rank of 113
+                    </p>
+                </div>
+                <div class="hobbies">
+                    <h2>
+                        Skills 
+                    </h2>
+                    <h3>
+                        Programming Languages
+                    </h3>
+                    <p>
+                        C++, Python, Java, C#, MATLAB
+                    </p>
+                    <h3>Database Management Systems</h3>
+                    <p>
+                        MYSql, Apache Solr
+                    </p>
+                    <h3>Operating Systems</h3>
+                    <p>
+                        Linux, MacOSX Catalina, Windows
+                    </p>
+                    <h3>Web and app technologies</h3>
+                    <p>
+                        Django, Android, Javascript, React, Redux
+                    <p>
+                    <h3>Miscellaneous </h3>
+                    </p>
+                        Node.js, Yarn, .NET, Keras
+                    <p>
+                </div>
+                <div class="hobbies">
+                    <h2>
+                        Volunteering and PORs
+                    </h2>
+                    <h3>Web Development Head, Coding Club, IIT Guwahati</h3>
+                    <p>Headed multiple groups of ~20 students of IIT Guwahati to develop various web and app based products
+                    </p>
+                    <h3>DISHA, IIT Guwahati</h3>
+                    <p>As part of DISHA's free teaching initiative, taught English and Math to underprivileged students from villages in and around North Guwahati on a weekly basis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

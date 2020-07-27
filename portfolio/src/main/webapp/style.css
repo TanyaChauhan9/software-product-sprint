@@ -3,7 +3,77 @@
   margin-right: auto;
   width: 650px;
 }
-
+body{
+    background-color:rgb(218, 227, 230);
+    padding:10px;
+    color: rgb(111, 117, 124);
+}
 #greeting-container {
   margin-top: 20px;
+}
+.content{
+    margin-left:0px;
+    margin-right:0px;
+}
+.container{
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 40px;
+    width:100%;
+}
+.projectLogo{
+    border-radius: 50%;
+    height:140px;
+    width:150px;
+    float:left;
+    margin-right: 20px;
+}
+.profilePhoto{
+    margin-top:15px;
+    border-radius: 50%;
+    float:left;
+    margin-right:15px;
+    margin-bottom: 15px;
+}
+.links{
+    margin: 10px;
+}
+.name{
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-weight:bold;
+}
+.Aboutme{
+    background-color: rgb(255, 255, 255);
+    padding:20px;
+    margin-bottom: 20px;
+    width:100%;
+}
+.rightSide{
+    margin-right: 25px;
+    margin-left: 10px;
+    width:35%;
+    float:right;
+    background-color:rgb(218, 227, 230);
+}
+.leftSide{
+    margin-left: 25px;
+    width:60%;
+    margin-right: 10px;
+    float:left;
+    background-color:rgb(218, 227, 230);
+}
+.projects{
+    padding:20px;
+    width:100%;
+    margin-bottom:20px;
+    background-color:rgb(255, 255, 255);
+}
+.hobbies{
+    padding:20px;
+    width:100%;
+    margin-bottom: 20px;
+    background-color:rgb(255, 255, 255);
+}
+h2,h1{
+    color: rgb(137, 203, 160);
 }
