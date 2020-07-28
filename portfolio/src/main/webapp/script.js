@@ -33,12 +33,10 @@ function getcomment() {
 
     const commentListElement = document.getElementById('comments-container');
     commentListElement.innerHTML = '';
-    commentListElement.appendChild(
-        createListElement('1: ' + comment[0]));
-    commentListElement.appendChild(
-        createListElement('2: ' + comment[1]));
-    commentListElement.appendChild(
-        createListElement('3: ' + comment[2]));
+    for(let i=0;i<comment.length;i++){
+        commentListElement.appendChild(
+        createListElement(comment[i]));
+    }
   });
 }
 

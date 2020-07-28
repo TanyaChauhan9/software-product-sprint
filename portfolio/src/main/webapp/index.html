@@ -4,7 +4,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-  <body>
+  <body onload="getcomment()">
         <div class="container">                       
             <img class="profilePhoto" src="../images/profilePhoto.jpg" alt="profile image" width=130 height=130 />
             <div>
@@ -239,7 +239,12 @@
                 </div>
             </div>
         </div>
-        <button onclick="getcomment()">Comments!</button>
-      <div id="comments-container"></div>
+        <div id="comments-container"></div>
+        <form action="/data" method="POST">
+            <p>Leave a comment:</p>
+            <input type="string" name="visitor-comment">
+            <br/><br/>
+            <input type="submit" />
+        </form>
     </body>
 </html>
