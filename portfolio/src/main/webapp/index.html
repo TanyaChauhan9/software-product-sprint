@@ -4,7 +4,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-  <body>
+  <body onload="getcomment()">
         <div class="container">                       
             <img class="profilePhoto" src="../images/profilePhoto.jpg" alt="profile image" width=130 height=130 />
             <div>
@@ -30,12 +30,12 @@
                 <div class="Aboutme">
                     <h2>About me</h2>
                     <p>Hi! I'm Tanya. 
-                    I'm pursuing my Bachelor's in Mathematics and Computing from Indian Institure of Techology, Guwahati. 
+                    I'm pursuing my Bachelor's in Mathematics and Computing from Indian Institute of Techology, Guwahati. 
                     Things that interest me the most are music, coding, working out, novels, astrophysics and a starry night sky! 
                     Also, I love having conversation with all kinds of people and gain experience from them.
                     <br/>
                     Recently, I've developed an interest for coding and both the thrill of speed and the patience required for diving deep into problems excite me!
-                    I've also worked on various software projects both during my college and my internships and I've worked hard to learn to write good quality codes.
+                    I've also worked on various software projects both during my college and my internships and I've worked hard to learn to write good quality code.
                     Feel free to reach out to me anywhere and I'd love to talk to you :)
                     </p>
                 </div>
@@ -61,7 +61,7 @@
                         <h3>Modern Employee Intranet App</h3>
                         <p>Developed a Modern Employee Intranet app on Microsoft Teams, to host all features and needs
                             for any organisation on a single platform. Implemented command-based intelligent bots to identify, understand and proactively reply using rich cards, message extension to query through content, and task modules to create a modal popup experience.
-                            The app was created on C# and .NET, used cognitive services like LUIS to develop an NLP based bot.
+                            The app was created on C# and .NET, used cognitive services like <a href="https://www.luis.ai/">LUIS</a> to develop an NLP based bot.
                         </p>
                     </div>
                 </div>
@@ -239,5 +239,12 @@
                 </div>
             </div>
         </div>
+        <div id="comments-container"></div>
+        <form action="/data" method="POST">
+            <p>Leave a comment:</p>
+            <input type="string" name="visitor-comment">
+            <br/><br/>
+            <input type="submit" />
+        </form>
     </body>
 </html>
